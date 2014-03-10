@@ -1,0 +1,13 @@
+{
+    "author": "Duncan Woods",
+    "name": "codehub",
+    "description": "Tutorial for grunt",
+    "homepage": "http://www.codehub.org.uk/",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+        "express": "~3.0"
+    },
+    "devDependencies": {
+    }
+}
