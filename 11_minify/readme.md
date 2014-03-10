@@ -4,12 +4,12 @@ Lesson 11 - Minify our javascript
 
 1. In gruntfile.js, load the karma module
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+        grunt.loadNpmTasks('grunt-contrib-uglify');
 
 2. Create a special test task
 
-    grunt.registerTask('test', ['browserify:test', 'karma:unit']);
-    grunt.registerTask('default', ['jshint', 'test', 'browserify', 'uglify']);
+        grunt.registerTask('test', ['browserify:test', 'karma:unit']);
+        grunt.registerTask('default', ['jshint', 'test', 'browserify', 'uglify']);
 
 3. Add configuration to init config
 
@@ -22,11 +22,11 @@ Lesson 11 - Minify our javascript
 
 4. Update our webpage /client/index.html
 
-    <script src="/js/client.min.js"></script>
+        <script src="/js/client.min.js"></script>
 
 5. Run grunt
 
-    grunt
+        grunt
 
 
 [CodeHub](http://www.codehub.org.uk/)
