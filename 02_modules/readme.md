@@ -16,21 +16,21 @@ Convert script into module
 
 2. Add a function definition e.g.
 
-    exports.myFunc = function(who) {
-        return 'Hello ' + who + '!';
-    };
+        exports.myFunc = function(who) {
+            return 'Hello ' + who + '!';
+        };
 
 3. Replace server/server.js with
 
-    var myModule = require('../lib/myModule.js');
+        var myModule = require('../lib/myModule.js');
 
-    console.log(
-        myModule.myFunc('CodeHub')
-    );
+        console.log(
+            myModule.myFunc('CodeHub')
+        );
 
 4. Run node
 
-    node server.js
+        node server.js
 
 
 [CodeHub](http://www.codehub.org.uk/)

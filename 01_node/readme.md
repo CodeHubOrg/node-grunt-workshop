@@ -30,11 +30,11 @@ Let write our first node script
 
 3. Add the code:
 
-    console.log('Hello World!');
+        console.log('Hello World!');
 
 4. Run node
 
-    node server.js
+        node server.js
 
 
 [CodeHub](http://www.codehub.org.uk/)

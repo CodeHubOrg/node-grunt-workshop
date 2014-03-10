@@ -11,30 +11,32 @@ Lets use the express to serve http
 
 1. In server/server.js, use Express to create an http server:
 
-    var myModule = require('./myModule.js');
-    var express = require('express');
-    var http = require('http');
+        var myModule = require('./myModule.js');
+        var express = require('express');
+        var http = require('http');
 
-    var app = express();
+        var app = express();
 
-    app.get('/:who', function (req, res) {
+        app.get('/:who', function (req, res) {
 
-        console.log("req: " + req.url);
+            console.log("req: " + req.url);
 
-        res.send(
-            '<html>' + myModule.myFunc(req.params.who) + '</html>'
-        );
-    });
+            res.send(
+                '<html>' + myModule.myFunc(req.params.who) + '</html>'
+            );
+        });
 
-    http.createServer(app).listen(4242);
+        http.createServer(app).listen(4242);
 
-    console.log("started on port 4242");
+        console.log("started on port 4242");
 
 2. Run the server
 
-    node server.js
+        node server.js
 
-    ** Error: Cannot find module 'express' **
+4. Expected error message e.g.
+
+        ** Error: Cannot find module 'express' **
 
 
 [CodeHub](http://www.codehub.org.uk/)
