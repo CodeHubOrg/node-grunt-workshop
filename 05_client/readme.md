@@ -1,9 +1,7 @@
 Lesson 5 - Client
 =================
 
-The magic starts happening when we use modules from the Node Package Manager (npm). This is an online repository of plug-in modules for node applications.
-
-https://www.npmjs.org/
+When we start to create a basic web page containing javascript, we quickly discover new requirements and uses for node and npm.
 
 Lets set up a simple web page
 -----------------------------
@@ -43,7 +41,7 @@ Lets set up a simple web page
         node server.js
 
 
-5. Browse to site
+5. Browse to the root of the site
 
         http://localhost:4242/
 

@@ -1,19 +1,21 @@
 Lesson 6 - Browserify
 =====================
 
-    https://www.npmjs.org/package/browserify
+    [https://www.npmjs.org/package/browserify](https://www.npmjs.org/package/browserify)
 
 
-Lets use browserify to be able to use CommonJS module in the client
--------------------------------------------------------------------
+Create CommonJS module for the client
+-------------------------------------
 
-1. Create /dist folder
-
-2. Install browserify
+1. Install browserify
 
         npm install browserify -g
 
-2. Run browserify
+2. Create /dist folder
+
+        mkdir dist
+
+3. Run browserify
 
         browserify lib/client.js > dist/client.js
 

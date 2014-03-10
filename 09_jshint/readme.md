@@ -7,11 +7,11 @@ Lint is a classic static analysis tool for C to help catch common faults. There 
 Lets integrate jshint to our grunt build
 ----------------------------------------
 
-1. in gruntfile.js, load the watch task
+1. In gruntFile.js, load the jshint task
 
         grunt.loadNpmTasks('grunt-contrib-jshint');
 
-2. Add to the default build
+2. Add to a jshint to the default build
 
         grunt.registerTask('default', ['jshint', 'browserify']);
 

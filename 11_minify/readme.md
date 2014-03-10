@@ -6,9 +6,8 @@ Lesson 11 - Minify our javascript
 
         grunt.loadNpmTasks('grunt-contrib-uglify');
 
-2. Create a special test task
+2. Add to the deafult build
 
-        grunt.registerTask('test', ['browserify:test', 'karma:unit']);
         grunt.registerTask('default', ['jshint', 'test', 'browserify', 'uglify']);
 
 3. Add configuration to init config
@@ -20,7 +19,7 @@ Lesson 11 - Minify our javascript
             }
         }
 
-4. Update our webpage /client/index.html
+4. Update our webpage /client/index.html to use the minified version
 
         <script src="/js/client.min.js"></script>
 

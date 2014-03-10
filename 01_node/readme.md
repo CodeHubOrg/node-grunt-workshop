@@ -21,18 +21,18 @@ Choose one of the following:
 - Windows - Chocolatey : cinst nodejs.install
 
 
-Let write our first node script
--------------------------------
+Lets write our first node script
+--------------------------------
 
 1. Create server folder
 
-2. Create server/server.js
+        mkdir server
 
-3. Add the code:
+2. Create server/server.js containing
 
         console.log('Hello World!');
 
-4. Run node
+3. Run node
 
         node server.js
 

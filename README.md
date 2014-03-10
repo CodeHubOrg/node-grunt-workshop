@@ -26,9 +26,9 @@ Clone the lesson repo
 
     git clone https://github.com/CodeHubOrg/node-grunt-workshop.git
 
-or go to
+or
 
-    https://github.com/CodeHubOrg/node-grunt-workshop
+    [download the zip](https://github.com/CodeHubOrg/node-grunt-workshop/archive/master.zip)
 
 
 Have fun!

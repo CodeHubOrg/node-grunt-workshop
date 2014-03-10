@@ -11,7 +11,7 @@ Lets use the express to serve http
 
 1. In server/server.js, use Express to create an http server:
 
-        var myModule = require('./myModule.js');
+        var myModule = require('../lib/myModule.js');
         var express = require('express');
         var http = require('http');
 
@@ -29,6 +29,7 @@ Lets use the express to serve http
         http.createServer(app).listen(4242);
 
         console.log("started on port 4242");
+
 
 2. Run the server
 

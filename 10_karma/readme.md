@@ -1,16 +1,14 @@
 Lesson 10 - Unit testing
 ========================
 
-
-
-Lets add jshint to
-------------------------------------
+Lets add karma
+--------------
 
 1. In gruntfile.js, load the karma module
 
         grunt.loadNpmTasks('grunt-karma');
 
-2. Create a special test task
+2. Create a new test only task
 
         grunt.registerTask('test', ['browserify:test', 'karma:unit']);
         grunt.registerTask('default', ['jshint', 'test', 'browserify']);

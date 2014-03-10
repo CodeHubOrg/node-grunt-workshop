@@ -12,15 +12,17 @@ Node.js uses CommonJS for module loading. This allows us to:
 Convert script into module
 --------------------------
 
-1. Create lib/myModule.js
+1. Create lib folder
 
-2. Add a function definition e.g.
+        mkdir lib
+
+2. Add lib/myModule.js with a function definition e.g.
 
         exports.myFunc = function(who) {
             return 'Hello ' + who + '!';
         };
 
-3. Replace server/server.js with
+3. Update server/server.js with
 
         var myModule = require('../lib/myModule.js');
 

@@ -1,5 +1,5 @@
-Lesson 8 - Watch for changes and autorun grunt
-==============================================
+Lesson 8 - Watch task
+=====================
 
 Basic flow for adding a grunt task
 
@@ -16,18 +16,18 @@ Lets automatically run grunt on any changes to our js
 
 1. in gruntfile.js, load the watch task
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
+        grunt.loadNpmTasks('grunt-contrib-watch');
 
-2. Add to the default build
+2. Register a new task in client/gruntFile.js
 
-    grunt.registerTask('build-watch', ['build:watch']);
+        grunt.registerTask('build-watch', ['build:watch']);
 
-    // Print a timestamp (useful for when watching)
-    grunt.registerTask('timestamp', function () {
-        grunt.log.subhead(Date());
-    });
+        // Print a timestamp (useful for when watching)
+        grunt.registerTask('timestamp', function () {
+            grunt.log.subhead(Date());
+        });
 
-3. Add configuration to init config
+3. Add configuration to init config in client/gruntFile.js
 
         watch: {
             all: {
@@ -42,7 +42,7 @@ Lets automatically run grunt on any changes to our js
 
 4. Run the grunt watch task
 
-    grunt watch
+        grunt watch
 
 5. Change the message in myModule.js & refresh the web page
 
