@@ -15,10 +15,21 @@ Install node.js
 
 Choose one of the following:
 
-- Direct download: http://nodejs.org/download/
-- OSX - Brew : brew install node
-- Ubuntu : sudo apt-get install nodejs
-- Windows - Chocolatey : cinst nodejs.install
+- Direct download:
+
+        http://nodejs.org/download/
+
+- OSX - Brew :
+
+        brew install node
+
+- Ubuntu :
+
+        sudo apt-get install nodejs
+
+- Windows - Chocolatey :
+
+        cinst nodejs.install
 
 
 Lets write our first node script
