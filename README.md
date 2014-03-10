@@ -28,7 +28,7 @@ Clone the lesson repo
 
 or
 
-    [download the zip](https://github.com/CodeHubOrg/node-grunt-workshop/archive/master.zip)
+[download the zip](https://github.com/CodeHubOrg/node-grunt-workshop/archive/master.zip)
 
 
 Have fun!
