@@ -1,5 +1,5 @@
-Lesson 11 - Minify our javascript
-=================================
+Lesson 12 - Wrap Up
+===================
 
 Other grunt tasks I use
 
