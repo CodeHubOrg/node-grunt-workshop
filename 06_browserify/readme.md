@@ -13,6 +13,7 @@ Create CommonJS module for the client
 
 2. Create /dist folder
 
+        cd ..
         mkdir dist
 
 3. Run browserify
@@ -25,6 +26,7 @@ Create CommonJS module for the client
 
 4. Restart the server
 
+        cd server
         node server.js
 
 5. Browse to site

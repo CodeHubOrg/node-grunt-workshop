@@ -65,10 +65,12 @@ Lets setup a gruntfile for running browserify
 
 4. cd to client folder, run grunt
 
+        cd client
         grunt
 
 5. Restart the server
 
+        cd server
         node server.js
 
 6. Browse to site

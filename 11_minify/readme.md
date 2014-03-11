@@ -25,6 +25,7 @@ Lesson 11 - Minify our javascript
 
 5. Run grunt
 
+        cd client
         grunt
 
 

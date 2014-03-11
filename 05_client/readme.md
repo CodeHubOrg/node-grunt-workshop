@@ -38,6 +38,7 @@ Lets set up a simple web page
 
 4. Restart the server
 
+        cd server
         node server.js
 
 

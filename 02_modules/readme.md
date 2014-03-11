@@ -12,8 +12,9 @@ Node.js uses CommonJS for module loading. This allows us to:
 Convert script into module
 --------------------------
 
-1. Create lib folder
+1. Create lib folder at the same level as server
 
+        cd ..
         mkdir lib
 
 2. Add lib/myModule.js with a function definition e.g.
@@ -32,6 +33,7 @@ Convert script into module
 
 4. Run node
 
+        cd server
         node server.js
 
 

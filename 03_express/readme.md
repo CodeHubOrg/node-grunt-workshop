@@ -33,6 +33,7 @@ Lets use the express to serve http
 
 2. Run the server
 
+        cd server
         node server.js
 
 4. Expected error message e.g.

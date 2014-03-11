@@ -37,6 +37,7 @@ Lets integrate jshint to our grunt build
 
 4. Run grunt
 
+        cd client
         grunt
 
 5. Expected error message e.g.

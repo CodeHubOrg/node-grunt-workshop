@@ -42,6 +42,7 @@ Lets automatically run grunt on any changes to our js
 
 4. Run the grunt watch task
 
+        cd client
         grunt watch
 
 5. Change the message in myModule.js & refresh the web page

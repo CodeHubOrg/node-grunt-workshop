@@ -8,12 +8,25 @@ Lets add karma
 
         grunt.loadNpmTasks('grunt-karma');
 
-2. Create a new test only task
+2. Add a test target to the browserify configuration
+
+        browserify: {
+          dist: {
+            src: '../lib/**/*.js',
+            dest: '../dist/client.js'
+          },
+          test: {
+            src: ['../lib/**/*.js','../test/unit/**/*.js'],
+            dest: '../dist-test/client.js'
+          }
+        },
+
+3. Create a new test only task
 
         grunt.registerTask('test', ['browserify:test', 'karma:unit']);
         grunt.registerTask('default', ['jshint', 'test', 'browserify']);
 
-3. Add configuration to init config
+4. Add configuration to init config
 
         karma: {
             unit: {
@@ -25,7 +38,7 @@ Lets add karma
 Lets add some jasmine unit tests for our function
 -------------------------------------------------
 
-4. Add unit tests to test/unit/myModule.spec.js
+5. Add unit tests to test/unit/myModule.spec.js
 
         describe('test myModule', function () {
 
@@ -53,7 +66,7 @@ Lets add some jasmine unit tests for our function
         });
 
 
-5. Add unit test configuration test/config/unit.js
+6. Add unit test configuration test/config/unit.js
 
         basePath = '../..';
 
@@ -75,11 +88,18 @@ Lets add some jasmine unit tests for our function
         browsers = ['Chrome'];
         singleRun = true;
 
-4. Run grunt
+7. Save jquery to a local vendor folder for testing
 
+        open chrome dev-tools
+        choose sources tab
+        find jquery and save-as
+
+8. Run grunt
+
+        cd client
         grunt test
 
-5. Fix the failing unit test by changing lib/myModule.js to
+9. Fix the failing unit test by changing lib/myModule.js to
 
     ... an exercise :)
 

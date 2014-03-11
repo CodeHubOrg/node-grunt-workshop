@@ -45,6 +45,7 @@ Lets write our first node script
 
 3. Run node
 
+        cd server
         node server.js
 
 
