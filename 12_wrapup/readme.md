@@ -31,11 +31,11 @@ Whats good about grunt
 - plugins for every task imaginable
 - flexible: quick to use and modify
 - cross platform
-- use JS for both front and backend
+- use JS for front-end code, backend-end code AND build/deploy/test etc.
 
 Areas of concern
 
-- can get carried away with a long build process
+- can get carried away with a long build process, modularise
 - multiple plugin options for the same task, choose wisely
 
 
