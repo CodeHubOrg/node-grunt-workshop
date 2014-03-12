@@ -14,7 +14,7 @@ Basic flow for adding a grunt task
 Lets automatically run grunt on any changes to our js
 -----------------------------------------------------
 
-1. in gruntfile.js, load the watch task
+1. in client/gruntFile.js, load the watch task
 
         grunt.loadNpmTasks('grunt-contrib-watch');
 

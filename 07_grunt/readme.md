@@ -9,7 +9,7 @@ What is grunt?
 - each module is recorded in package.json
 - each task uses json configuration
 
-http://gruntjs.com/
+[http://gruntjs.com/](http://gruntjs.com/)
 
 
 Lets setup a gruntfile for running browserify
@@ -37,13 +37,13 @@ Lets setup a gruntfile for running browserify
                 "grunt-contrib-uglify": "~0.1.1",
                 "grunt-karma": "~0.4.4",
                 "grunt-contrib-watch": "~0.3.1",
-                "browserify": "3.32.1"
+                "grunt-browserify":"~1.3.1"
             },
             "devDependencies": {
             }
         }
 
-3. Create a grunt file
+3. Create client/gruntFile.js
 
         module.exports = function (grunt) {
 
@@ -56,24 +56,28 @@ Lets setup a gruntfile for running browserify
                 browserify: {
                   dist: {
                     src: '../lib/**/*.js',
-                    dest: 'dist/client.js'
+                    dest: '../dist/client.js'
                   }
                 }
 
             });
         };
 
-4. cd to client folder, run grunt
+4. Install grunt command line
+
+        npm install -g grunt-cli
+
+5. cd to client folder, run grunt
 
         cd client
         grunt
 
-5. Restart the server
+6. Restart the server
 
         cd server
         node server.js
 
-6. Browse to site
+7. Browse to site
 
         http://localhost:4242/
 
